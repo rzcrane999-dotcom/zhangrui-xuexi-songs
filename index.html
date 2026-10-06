@@ -7,6 +7,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans G
 header{text-align:center;padding:28px 0 18px;border-bottom:2px solid #b98a2f;margin-bottom:20px}
 header h1{font-size:1.6em;letter-spacing:.1em;color:#7a5c1e}
 header .sub{color:#666;font-size:.95em;margin-top:8px}
+.hero{position:relative;height:44vh;min-height:300px;overflow:hidden;border-radius:12px;margin-bottom:20px;background:#3a2c1c}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(rgba(60,40,20,.18),rgba(60,40,20,.5));color:#fff;text-align:center;padding:16px}
+.hero-text h1{font-size:2.4em;letter-spacing:.35em;text-indent:.35em;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45);margin:0 0 .35em}
+.hero-text p{color:#f5ead6;letter-spacing:.25em;font-size:.95em;margin:0}
 a{color:#7a5c1e}
 ul.songlist{list-style:none}
 ul.songlist li{border-bottom:1px solid #e5ddcc;padding:10px 4px}
@@ -26,8 +31,13 @@ nav.back{margin:14px 0}
 .intro .sign{text-align:right;color:#7a5c1e;font-weight:bold;margin-top:14px}
 footer{margin-top:32px;padding-top:14px;border-top:1px solid #e5ddcc;color:#999;font-size:.8em;text-align:center}
 </style></head><body>
-<header><h1>雪兮花兮</h1>
-<p class="sub">作词：雪非　作曲：Rui（201首）</p></header>
+<div class="hero">
+<video autoplay muted loop playsinline poster="media/cover-poster.jpg">
+<source src="media/cover.mp4" type="video/mp4">
+</video>
+<div class="hero-text"><h1>雪兮花兮</h1>
+<p>作词：雪非　作曲：Rui（201首）</p></div>
+</div>
 <div class="intro">
 <h2>专辑简介</h2>
 <p>《雪兮花兮》，雪非作词，Rui（《鹤鸣文学》总编）作曲。专辑收录二百零一首诗歌，汇成一卷音乐书。作品源自喜马拉雅《雪兮花兮:爱你》专辑，每首含歌词、带和弦标记的五线谱与演唱录音，并附原曲链接，诗乐相融，愿与同好共赏。</p>
